@@ -1,0 +1,200 @@
+﻿1. The python program given below will print sum of odd numbers upto n terms
+
+
+Eg : Enter the number of odd terms: 5
+       The sum of the first 5 odd numbers is: 25
+
+
+The following code contains both logical and syntactical errors. Find it and fix it !!! 
+
+
+
+
+
+
+def sum_of_odd_numbers(n)                                     
+    total_sum = 0
+    odd-number = 1                      
+
+
+    for i in range(n):
+        total_sum += odd_number
+        odd_number += 2  
+
+
+    return total_sum
+
+
+n = int(input("Enter the number of odd terms "))        
+print("The sum of the first {n} odd numbers is: {sum_of_odd_numbers(n)}")   
+
+
+
+
+
+
+
+
+
+
+2.The python program given calculates the sum of even and odd numbers separately up to  20
+       Eg:   input - 20
+        output
+Sum of even numbers up to 20: 110
+Sum of odd numbers up to 20: 100
+
+
+The following code contains both logical and syntactical errors. Find it and fix it !!!
+
+
+def sum_even_odd(n):
+    sum_even = 0
+    sum_odd = 0
+    for i in range(1; n + 1):                
+        if 1 % 2 == 0:                        
+            sum_even += i  
+        else                                        
+            sum_odd += i   
+    return sum_even, sum_odd
+n = 20
+even_sum, odd_sum = sum_even_odd(n)
+print(f"Sum of even numbers up to {n} {even_sum}")     
+print(f"Sum of odd numbers up to {n} {odd_sum}")        
+3.This is a python program to print the pattern output:
+
+
+      1 
+    2 3 2 
+  3 4 5 4 3 
+4 5 6 7 6 5 4 
+
+
+ The following code contains both logical and syntactical errors. Find it and fix it !!!
+
+
+
+
+
+
+
+
+def print_pattern():        
+    for i in range(1, n-1):        
+        print("  " * (n + i), end="")        
+        for j in range(i, 2 * i):
+            print(j, end=" ")
+        for j in range(2 > i - 2, i - 1, -1):        
+            print(j, end=" ")
+        print()
+n = 4
+print_pattern(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.The python program given below will print sum of digits of a number using recursion 
+Eg :
+Enter a number: abc
+Invalid input! Please enter an integer value.
+Enter a number: 123
+The sum of digits of 123 is: 6
+Enter a number: -345
+The number -345 is negative, converting it to positive.
+The sum of digits of -345 is: 12
+
+
+ The following code contains both logical and syntactical errors. Find it and fix it !!!
+
+
+def sum_of_digits(n):
+    if n == 0:
+        return 0
+    last_digit = n % 10        
+    remaining_number = n / 10                
+    return last_digit + sum_of_digits(remaining_number)
+
+
+def handle_negative(number)                
+    if number < 0:
+        print(f"The number {number} is negative, converting it to positive.")
+        return abs(number)
+    returm number                
+
+
+def get_user_input:                
+    while True:
+        Get:                        
+            number = int(input("Enter a number: "))
+            return number
+        except ValueError:
+            print("Invalid input! Please enter an integer value.")
+
+
+def display_result(number, result):
+    print(f"The sum of digits of {number} is: {result}")
+
+
+def void():                        
+    number = get_user_input()
+    original_number = number
+    number = handle_negative(number)
+    sum_result = sum_of_digits(number)
+    display_result(original_number, sum_result)
+
+
+if __name__ == "__main__":
+    main()
